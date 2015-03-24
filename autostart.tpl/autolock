@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+xautolock \
+	-time 5 \
+	-locker "$HOME/.i3/i3exit lock"

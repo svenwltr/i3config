@@ -1,0 +1,4 @@
+#!/bin/bash
+
+feh \
+	--bg-tile $HOME/.i3/background.png
