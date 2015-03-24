@@ -1,4 +1,11 @@
 #!/bin/bash
 
-feh \
-	--bg-tile $HOME/.i3/background.png
+function repeat() {
+	while true
+	do
+		feh --bg-title $HOME/.i3/background.png
+		sleep 1
+	done
+}
+
+repeat &

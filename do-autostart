@@ -2,5 +2,7 @@
 
 for script in $HOME/.i3/autostart.d/*
 do
-	${script} || true
+	${script}
 done
+
+

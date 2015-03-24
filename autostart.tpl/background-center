@@ -1,5 +1,12 @@
 #!/bin/bash
 
-feh \
-	--bg-center $HOME/.i3/background.png
+function repeat() {
+	while true
+	do
+		feh --bg-max $HOME/.i3/background.png
+		sleep 1
+	done
+}
+
+repeat &
 

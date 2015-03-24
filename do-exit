@@ -4,6 +4,7 @@ lock() {
 		--dpms \
 		--ignore-empty-password \
 		--no-unlock-indicator \
+		--color 000000 \
 		--image $HOME/.i3/lockscreen.png
 }
 

@@ -3,4 +3,5 @@
 
 xautolock \
 	-time 5 \
-	-locker "$HOME/.i3/i3exit lock"
+	-locker "$HOME/.i3/i3exit lock" \
+	&
