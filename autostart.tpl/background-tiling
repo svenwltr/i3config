@@ -3,7 +3,7 @@
 function repeat() {
 	while true
 	do
-		feh --bg-title $HOME/.i3/background.png
+		feh --bg-tile $HOME/.i3/background.png
 		sleep 1
 	done
 }
