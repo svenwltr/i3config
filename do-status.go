@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	DATE_LAYOUT = "2. Jan 2006 15:04:05"
+	DATE_LAYOUT = "2. Jan 2006, 15:04:05"
 	COLOR_LABEL = "#999999"
 )
 
@@ -30,7 +30,8 @@ func (l *StatusLine) AddLabel(label string) {
 		SetFullText(label).
 		SetColor(COLOR_LABEL).
 		SetSeparator(false).
-		SetSeparatorWidth(0)
+		SetSeparatorWidth(0).
+		SetMinWidthString("9h59m59s")
 
 }
 
@@ -56,6 +57,12 @@ func (l *StatusSegment) SetSeparator(s bool) *StatusSegment {
 
 func (l *StatusSegment) SetSeparatorWidth(w int) *StatusSegment {
 	(*l)["separator_block_width"] = w
+	return l
+
+}
+
+func (l *StatusSegment) SetMinWidthString(s string) *StatusSegment {
+	(*l)["min_width"] = s
 	return l
 
 }
