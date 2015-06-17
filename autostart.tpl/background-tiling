@@ -1,10 +1,10 @@
 #!/bin/bash
 
 function repeat() {
-	while true
+	for n in 1 1 2 3 5 8 13 21 34
 	do
 		feh --bg-tile $HOME/.i3/background.png
-		sleep 1
+		sleep $n
 	done
 }
 
