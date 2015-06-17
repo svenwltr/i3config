@@ -27,8 +27,12 @@ case "$1" in
     shutdown)
         systemctl poweroff
         ;;
+	switch-user)
+		lock && gdmflexiserver
+		;;
     *)
-        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        echo "Usage: $0
+		{lock|logout|suspend|hibernate|reboot|shutdown|switch-user}"
         exit 2
 esac
 
